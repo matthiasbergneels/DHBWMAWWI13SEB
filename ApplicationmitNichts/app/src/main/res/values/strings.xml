@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Application mit Nichts</string>
+    <string name="title_activity_richtige">RichtigeActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mathe">Mathe Activity</string>
+    <string name="title_activity_db">Datenbank Activity</string>
+</resources>
