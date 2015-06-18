@@ -2,7 +2,6 @@ package de.mubn.vorlesung.applicationmitnichts;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -11,7 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class RichtigeActivity extends ActionBarActivity {
+public class RichtigeActivity extends Acticity {
 
     public static final String MATH_TEXT = "MATH_TEXT";
 
