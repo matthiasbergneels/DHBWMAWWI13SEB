@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class RichtigeActivity extends Acticity {
+public class RichtigeActivity extends Activity {
 
     public static final String MATH_TEXT = "MATH_TEXT";
 
