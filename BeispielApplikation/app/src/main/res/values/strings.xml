@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Example Application</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome_label">Welcome to the examples</string>
+    <string name="btntxt_navigation">Navigation example</string>
+    <string name="btntxt_menuexample">Menu example</string>
+    <string name="btntxt_layout">Layout example</string>
+    <string name="title_activity_nav_examples">NavExamples</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="navigation_headline">Navigation Example</string>
+    <string name="btntxt_navsimplewithouthier">Simple navigation without hierarchy</string>
+    <string name="btntxt_simplenavwh">Simple navigation with hierarchy</string>
+    <string name="btntxt_navwithresponse">Navigation with response</string>
+    <string name="title_activity_menu_example">Menu Example</string>
+    <string name="menu_headline">Menu Example</string>
+    <string name="menu_add">Add</string>
+    <string name="title_activity_layout_example">LayoutExample</string>
+    <string name="title_activity_layout_examples">LayoutExamples</string>
+    <string name="lbl_hdl_layout_examples">Layout Examples</string>
+    <string name="btntxt_layout_absolut">Absolut Layout</string>
+    <string name="btntxt_layout_frame">Frame Layout</string>
+    <string name="btntxt_layout_linear">Linear Layout</string>
+    <string name="btntxt_table_layout">Table Layout</string>
+    <string name="btntxt_layout_realtiv">Relativ Layout</string>
+    <string name="title_activity_broadcast_example">BroadcastExample</string>
+    <string name="btntxt_braodcast">Broadcast Excample</string>
+    <string name="btntxt_broadcast_send">Send Broadcast</string>
+</resources>

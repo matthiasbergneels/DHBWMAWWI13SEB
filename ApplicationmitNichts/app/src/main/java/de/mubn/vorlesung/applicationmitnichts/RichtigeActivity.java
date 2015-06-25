@@ -14,6 +14,8 @@ public class RichtigeActivity extends Activity {
 
     public static final String MATH_TEXT = "MATH_TEXT";
 
+    public static final String LAYOUT_ID = "LAYOUT_ID";
+
     public static final int MATH_REQUEST = 1000;
 
     @Override
@@ -105,12 +107,37 @@ public class RichtigeActivity extends Activity {
                 break;
             case R.id.db_button:
                 i = new Intent(this, DBActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.nav_linear:
+                i = new Intent(this, layoutActivity.class);
+                i.putExtra(LAYOUT_ID, R.id.nav_linear);
+                startActivity(i);
+                break;
+            case R.id.nav_absolut:
+                i = new Intent(this, layoutActivity.class);
+                i.putExtra(LAYOUT_ID, R.id.nav_absolut);
+                startActivity(i);
+                break;
+            case R.id.nav_frame:
+                i = new Intent(this, layoutActivity.class);
+                i.putExtra(LAYOUT_ID, R.id.nav_frame);
+                startActivity(i);
+                break;
+            case R.id.nav_relativ:
+                i = new Intent(this, layoutActivity.class);
+                i.putExtra(LAYOUT_ID, R.id.nav_relativ);
+                startActivity(i);
+                break;
+            case R.id.nav_table:
+                i = new Intent(this, layoutActivity.class);
+                i.putExtra(LAYOUT_ID, R.id.nav_table);
+                startActivity(i);
                 break;
         }
 
-        if(i != null){
-            startActivity(i);
-        }
+
     }
 
     @Override

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beispiel Applikation</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <string name="welcome_label">Willkommen bei den Beispielen</string>
+    <string name="btntxt_navigation">Navigation example</string>
+    <string name="btntxt_menuexample">Menu example</string>
+    <string name="btntxt_layout">Layout example</string>
+    <string name="navigation_headline">Navigation Example</string>
+    <string name="btntxt_navsimplewithouthier">Simple navigation without hierarchy</string>
+    <string name="btntxt_simplenavwh">Simple navigation with hierarchy</string>
+    <string name="btntxt_navwithresponse">Navigation with response</string>
+    <string name="lbl_hdl_layout_examples">Layout Beispiele</string>
+    <string name="btntxt_layout_absolut">Absolut Layout</string>
+    <string name="btntxt_layout_frame">Frame Layout</string>
+    <string name="btntxt_layout_linear">Linear Layout</string>
+    <string name="btntxt_table_layout">Table Layout</string>
+    <string name="btntxt_braodcast">Broadcast Excample</string>
+    <string name="btntxt_broadcast_send" />
+</resources>

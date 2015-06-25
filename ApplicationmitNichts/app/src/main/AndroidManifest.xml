@@ -33,6 +33,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="de.mubn.vorlesung.applicationmitnichts.RichtigeActivity" />
         </activity>
+        <activity
+            android:name=".layoutActivity"
+            android:label="@string/title_activity_layout" >
+        </activity>
     </application>
 
 </manifest>

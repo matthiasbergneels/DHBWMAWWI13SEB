@@ -1,28 +1,23 @@
-package de.mubn.vorlesung.applicationmitnichts;
+package de.mubn.vorlesung.beispielapplikation;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class DBActivity extends ActionBarActivity {
-
-    private final String LOG_TAG = DBActivity.class.getSimpleName();
+public class NavExamples extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_db);
-
+        setContentView(R.layout.activity_nav_examples);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_db, menu);
+        getMenuInflater().inflate(R.menu.menu_nav_examples, menu);
         return true;
     }
 
@@ -35,9 +30,6 @@ public class DBActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
-        }else if(id == R.id.action_add){
-            Log.d(LOG_TAG, "Menu item add pressed!");
             return true;
         }
 
