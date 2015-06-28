@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">Application mit Nichts</string>
-    <string name="title_activity_richtige">RichtigeActivity</string>
+    <string name="app_name">Application with nothing</string>
+    <string name="title_activity_richtige">Right Activity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_mathe">Mathe Activity</string>
-    <string name="title_activity_db">Datenbank Activity</string>
+    <string name="title_activity_mathe">Math Activity</string>
+    <string name="title_activity_db">Database Activity</string>
     <string name="title_activity_layout">layoutActivity</string>
+    <string name="btntxt_to_math">Go to Math</string>
+    <string name="btntxt_to_db">Go to Database</string>
+    <string name="txt_respons_from_math">Response from Math: </string>
+    <string name="title_activity_broadcast_example">BroadcastExample</string>
 </resources>

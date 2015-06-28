@@ -4,4 +4,10 @@
     tools:context="de.mubn.vorlesung.applicationmitnichts.RichtigeActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_start_service" android:title="Start service"
+        android:orderInCategory="50" app:showAsAction="always" android:icon="@android:drawable/ic_media_play" />
+    <item android:id="@+id/action_stop_service" android:title="Stop service"
+        android:orderInCategory="51" app:showAsAction="never" android:icon="@android:drawable/ic_media_pause" />
+
 </menu>

@@ -1,12 +1,19 @@
 package de.mubn.vorlesung.beispielapplikation;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class NavExamples extends ActionBarActivity {
+
+    public static final int REQUEST_CODE = 1000;
+    public static final String QUESTION_KEY = "QUESTION";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +41,44 @@ public class NavExamples extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClick(View view){
+
+        if(view.getId() == R.id.btn_simplenavwoh){
+            Intent i = new Intent(this, SimpleNavigationExample.class);
+            startActivity(i);
+        }else if (view.getId() == R.id.btn_simplenavwh) {
+            Intent i = new Intent(this, SimpleNavigationWithHierachy.class);
+            startActivity(i);
+        }else if (view.getId() == R.id.btn_navwithresponse) {
+            Intent i = new Intent(this, NavigationWithQuestionAndResponse.class);
+
+            EditText ed = (EditText)findViewById(R.id.ed_question_txt);
+
+            String question = (ed.getText().toString().equals("")) ? getText(R.string.welcome_label).toString() : ed.getText().toString();
+
+            i.putExtra(QUESTION_KEY, question);
+
+            startActivityForResult(i, REQUEST_CODE);
+        }
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == REQUEST_CODE){
+
+            ((EditText)findViewById(R.id.ed_question_txt)).setText("");
+
+            if(resultCode == RESULT_OK){
+                String answer = data.getExtras().getString(NavigationWithQuestionAndResponse.ANSWER_KEY);
+
+                Toast.makeText(this, "The answer is: " + answer, Toast.LENGTH_LONG).show();
+            }
+        }
+
     }
 }

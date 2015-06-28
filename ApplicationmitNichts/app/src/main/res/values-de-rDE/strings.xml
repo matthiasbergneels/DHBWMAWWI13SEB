@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application mit Nichts</string>
+    <string name="title_activity_richtige">RichtigeActivity</string>
+
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_activity_mathe">Mathe Activity</string>
+    <string name="title_activity_db">Datenbank Activity</string>
+    <string name="title_activity_layout">Layout Aktivität</string>
+    <string name="btntxt_to_math">Navigiere zu Mathe</string>
+    <string name="btntxt_to_db">Navigiere zu Datenbanke</string>
+    <string name="txt_respons_from_math">Antwort von Mathe: </string>
+</resources>

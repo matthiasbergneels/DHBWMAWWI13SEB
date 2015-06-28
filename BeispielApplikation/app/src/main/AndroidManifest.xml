@@ -65,6 +65,42 @@
                 <action android:name="android.intent.action.AIRPLANE_MODE" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name=".ServiceExample"
+            android:label="@string/title_activity_service_example"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.mubn.vorlesung.beispielapplikation.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".MyTestService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".SimpleNavigationExample"
+            android:label="@string/title_activity_simple_navigation_example" >
+        </activity>
+        <activity
+            android:name=".SimpleNavigationWithHierachy"
+            android:label="@string/title_activity_simple_navigation_with_hierachy"
+            android:parentActivityName=".NavExamples" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.mubn.vorlesung.beispielapplikation.NavExamples" />
+        </activity>
+        <activity
+            android:name=".NavigationWithQuestionAndResponse"
+            android:label="@string/title_activity_navigation_with_question_and_response"
+            android:parentActivityName=".NavExamples" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.mubn.vorlesung.beispielapplikation.NavExamples" />
+        </activity>
     </application>
 
 </manifest>

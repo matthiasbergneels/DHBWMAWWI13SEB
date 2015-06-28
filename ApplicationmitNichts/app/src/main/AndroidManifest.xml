@@ -37,6 +37,29 @@
             android:name=".layoutActivity"
             android:label="@string/title_activity_layout" >
         </activity>
+        <activity
+            android:name=".BroadcastExample"
+            android:label="@string/title_activity_broadcast_example"
+            android:parentActivityName=".RichtigeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.mubn.vorlesung.applicationmitnichts.RichtigeActivity" />
+        </activity>
+
+        <receiver
+            android:name=".MyTestReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyTestService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

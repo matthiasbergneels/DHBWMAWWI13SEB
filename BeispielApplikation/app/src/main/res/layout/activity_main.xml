@@ -40,6 +40,12 @@
         android:text="@string/btntxt_braodcast"
         android:id="@+id/btn_braodcast"
         android:onClick="onClick" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btntxt_service"
+        android:id="@+id/btn_service"
+        android:onClick="onClick" />
 
 
 </LinearLayout>

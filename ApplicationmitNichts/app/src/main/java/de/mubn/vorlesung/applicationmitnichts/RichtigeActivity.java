@@ -3,6 +3,7 @@ package de.mubn.vorlesung.applicationmitnichts;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class RichtigeActivity extends Activity {
+public class RichtigeActivity extends ActionBarActivity {
 
     public static final String MATH_TEXT = "MATH_TEXT";
 
@@ -86,7 +87,14 @@ public class RichtigeActivity extends Activity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if(id == R.id.action_start_service){
+            Intent i = new Intent(this, MyTestService.class);
+            startService(i);
+        }else if(id == R.id.action_stop_service){
+            Intent i = new Intent(this, MyTestService.class);
+            stopService(i);
         }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -135,6 +143,10 @@ public class RichtigeActivity extends Activity {
                 i.putExtra(LAYOUT_ID, R.id.nav_table);
                 startActivity(i);
                 break;
+            case R.id.nav_broadcast:
+                i = new Intent(this, BroadcastExample.class);
+                startActivity(i);
+                break;
         }
 
 
@@ -148,7 +160,7 @@ public class RichtigeActivity extends Activity {
             if(resultCode == Activity.RESULT_OK){
                 String response = data.getExtras().getString(MatheActivity.MATH_RESPONSE);
 
-                Toast.makeText(this, "Antwort: " + response, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getText(R.string.txt_respons_from_math) + response, Toast.LENGTH_LONG).show();
             }
 
         }

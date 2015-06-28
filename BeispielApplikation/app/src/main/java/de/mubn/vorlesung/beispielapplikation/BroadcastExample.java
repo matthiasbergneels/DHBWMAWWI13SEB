@@ -37,6 +37,8 @@ public class BroadcastExample extends ActionBarActivity {
                 toastText = "Battery level changed!";
             }else if(intent.getAction().equals(BROADCAST_ACTION)){
                 toastText = bundle.getString(USER_BROADCAST_KEY);
+            }else if(intent.getAction().equals(MyTestService.SERVICE_ACTION)){
+                toastText = bundle.getString(MyTestService.SERVICE_KEY);
             }
 
             Toast.makeText(BroadcastExample.this, toastText, Toast.LENGTH_LONG).show();
@@ -78,6 +80,7 @@ public class BroadcastExample extends ActionBarActivity {
         IntentFilter filter = new IntentFilter();
         filter.addAction(Intent.ACTION_BATTERY_CHANGED);
         filter.addAction(BROADCAST_ACTION);
+        filter.addAction(MyTestService.SERVICE_ACTION);
 
         getApplicationContext().registerReceiver(myBatteryReceiver, filter);
     }

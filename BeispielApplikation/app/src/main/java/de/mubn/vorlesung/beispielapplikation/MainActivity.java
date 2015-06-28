@@ -62,6 +62,9 @@ public class MainActivity extends ActionBarActivity {
             case R.id.btn_braodcast:
                 logAndStartActivity(BroadcastExample.class);
                 break;
+            case R.id.btn_service:
+                logAndStartActivity(ServiceExample.class);
+                break;
         }
     }
 

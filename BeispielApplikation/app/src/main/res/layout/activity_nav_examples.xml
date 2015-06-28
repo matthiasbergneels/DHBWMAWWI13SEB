@@ -30,7 +30,19 @@ android:orientation="vertical">
     android:id="@+id/btn_simplenavwh"
     android:onClick="onClick"/>
 
-<Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lbl_hdl_question"
+        android:id="@+id/textView8" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_question_txt" />
+
+    <Button
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="@string/btntxt_navwithresponse"

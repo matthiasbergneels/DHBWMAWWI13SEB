@@ -27,4 +27,20 @@
     <string name="title_activity_broadcast_example">BroadcastExample</string>
     <string name="btntxt_braodcast">Broadcast Excample</string>
     <string name="btntxt_broadcast_send">Send Broadcast</string>
+    <string name="title_activity_service_example">ServiceExample</string>
+    <string name="lbl_hdl_service_example">Service Example</string>
+    <string name="btntxt_start_service">Start Service</string>
+    <string name="btntxt_stop_service">Stop Service</string>
+    <string name="btntxt_service">Service Example</string>
+    <string name="title_activity_simple_navigation_example">SimpleNavigationExample</string>
+    <string name="lbl_hdl_simple_nav_target">Simple Navigation Target</string>
+    <string name="title_activity_simple_navigation_with_hierachy">SimpleNavigationWithHierachy
+    </string>
+    <string name="lbl_hdl_simple_nav_target_w_hierachy">Simple Navigation Target with Hierachy</string>
+    <string name="title_activity_navigation_with_question_and_response">
+        NavigationWithQuestionAndResponse
+    </string>
+    <string name="lbl_hdl_nav_question_and_response">Question and Response</string>
+    <string name="btn_txt_answer_question">Send answer</string>
+    <string name="lbl_hdl_question">Ask a question:</string>
 </resources>
